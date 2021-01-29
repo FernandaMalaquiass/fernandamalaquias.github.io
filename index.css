@@ -1,0 +1,162 @@
+body{
+    background-color: rgb(200,240,255);
+}
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 20px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Container for flexboxes */
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+
+/* Style the navigation menu */
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width:800px) {
+    /* For tablets: */
+    .main {
+      width: 80%;
+      padding: 0;
+    }
+    .right {
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width:500px) {
+    /* For mobile phones: */
+    .menu, .main, .right {
+      width: 100%;
+    }
+  }
+</style>
+</head>
+<body>
+
+
+
+header{
+    
+}
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px ;
+    font-style: normal;
+    font-weight: normal;
+    color: gray;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px ;
+    font-weight: bold;
+    letter-spacing: 0.3em;
+    color: rgb(7, 7, 7);
+    background-color: silver;
+}
+nav.menu1 ul {   
+    list-style-type: none;
+    margin: 0px; 
+    padding: 0px;}
+
+    nav.menu1 li {   
+        display: inline;
+        padding:5px;}
+    
+    nav.menu1 li a {   
+        text-decoration: none; 
+        padding-left: 6px; 
+        padding-right: 6px; 
+        padding-top: 6px;
+        padding-bottom: 6px;
+        background-color: black;
+        color: white;} 
+
+    nav.menu1 li a:hover {   
+        background-color:gray; 
+        color: blue;} 
+
+            .col-3 {
+                text-align: center;
+                padding-left: 15px;
+                padding-right: 15px; 
+                width: 29%;
+                float: left;
+                position: relative;
+            }
+            .bloco-imagem img {
+                margin: 0 auto;
+                width: 100%;
+                height: auto;
+            }
+            .bloco-imagem {
+                height: 300px;
+                border: 1px solid #c5c5c5;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                margin-left: 10px;
+            }
+            .bloco-imagem b, p {
+                text-align: left;
+            }
+            .bloco-texto {
+                margin-top: 3em;
+            }
+           
+             
+        </header>
+        </body>
+        </body>
+        </body>
+
+       
+     
+  
