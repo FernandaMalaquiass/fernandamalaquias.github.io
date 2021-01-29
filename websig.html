@@ -1,0 +1,118 @@
+<!DOCTYPE html> 
+
+<html> 
+
+<head> 
+<title>WEBSIG</title> 
+<meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" 
+    href="websig.css">   
+<style>
+    .plink {text-align: center;}
+    h1,h3 {text-align: center;}
+    #a1 {margin-left: 200px;}
+    .texto {text-align: center;}
+</style>
+</head> 
+
+<body>
+    <h1>WEB SIG</h1>  
+    <meta charset ="stf-8">
+    <h3><p class= "plink">Polis Litoral Norte</p> </h3>
+    <p class= "plink">
+        Operações integradas de requalificação e valorização de zonas de risco e de áreas naturais degradadas situadas no litoral<br>
+        Os objectivos essenciais destas intervenções são:
+
+    <li>   <em><em>Proteger e requalificar a zona costeira, </em></li>
+    tendo em vista a defesa da costa, a promoção da conservação da natureza e biodiversidade, a renaturalização e a reestruturação <br>
+    de zonas lagunares e a preservação do património natural e paisagístico, no âmbito de uma gestão sustentável.
+
+    <li><em>Prevenir e defender,</em></li>
+    pessoas, bens e sistemas de riscos naturais.
+
+    <li><em>Promover a fruição pública do litoral,</em></li>
+    suportada na requalificação dos espaços balneares e do património ambiental e cultural.
+
+    <li><em>Potenciar os recursos ambientais como fator de competitividade,</em></li>
+    através da valorização das atividades económicas ligadas aos recursos do litoral e associando-as à preservação dos recursos naturais.
+         </p>  
+
+         <ul><center> <img src="polis.webp" width:100% > </center>
+         </ul>
+    
+         <head>
+    <meta charset="utf-8">
+    <title>Leaflet Map</title>
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+</head>
+
+
+<body>
+    <li><b>Medidas correctivas de erosão e defesa costeira</b></li>
+ <!-- Our web map and content will go here -->
+    <div id="map" style="width: 705px; height: 375px">i</div>
+    
+
+    <script>
+    // Create variable to hold map element, give initial settings to map
+        var map = L.map('map',{ center: [41.397623, -8.772031], zoom: 8});
+        L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', { attribution: '©OpenStreetMap' })
+        .addTo(map);
+    // Create point feature for Polis Litoral Norte
+    //
+        var myDataPoint = L.marker([41.735243, -8.873613]).addTo(map); // Portinho do Lumiar
+        var myDataPoint = L.marker([41.754904, -8.873096]).addTo(map); // Esporão da Pedra Alta
+        var myDataPoint = L.marker([41.680928, -8.796632]).addTo(map); // Embocadura do rio Neiva
+        var myDataPoint = L.marker([41.529551, -8.791798]).addTo(map); // Esporões de Ofir e Restinga
+        var myDataPoint = L.marker([41.845044, -8.872747]).addTo(map); // Rochedos de Santo Isídoro
+        var myDataPoint = L.marker([41.755036, -8.868378]).addTo(map); // Montedor 
+        var myDataPoint = L.marker([41.711698, -8.862095]).addTo(map); // Areosa  
+        var myDataPoint = L.marker([41.667565, -8.824746]).addTo(map); // Rodanho 
+        var myDataPoint = L.marker([41.628644, -8.822223]).addTo(map); // Pedra Alta / Foz do Neiva 
+        var myDataPoint = L.marker([41.590444, -8.804036]).addTo(map); // Belinho 
+        var myDataPoint = L.marker([41.554960, -8.794146]).addTo(map); // Cepães 
+        var myDataPoint = L.marker([41.551773, -8.793268]).addTo(map); // Redonda 
+        var myDataPoint = L.marker([41.540468, -8.788348]).addTo(map); // Suave Mar
+        var myDataPoint = L.marker([41.568386, -8.797618]).addTo(map); // Pedrinhas/Moinhos 
+
+
+
+
+        // Create line feature for Esposende Until Caminha, style and add to map
+        var myDataLine = L.polyline([[41.531283, -8.782076], [41.682640, -8.833227], [41.767327, -8.876486], [41.873735, -8.834261]], 
+        {color: 'red', weight: 10}).addTo(map);
+
+     
+
+        
+        // Create an Empty Popup
+        varpopup=L.popup();
+
+        // Write function to set Properties of the Popup
+        function onMapClick(e) {
+        popup
+        .setLatLng(e.latlng)
+        .setContent("You clicked the map at "+e.latlng.toString())
+        .openOn(map);
+        
+        }
+        
+        
+
+    </script>
+</body>
+
+        <p class="plink">
+            <a href="cv.html"> Currículo PDF para descarregar </a>
+            <a href="site-fernanda.html"> Ínicio </a>
+        </p>
+        <p><footer> Fernanda Malaquias. 2021, All rights reversed. </footer></p>   
+    </body>
+</html>
